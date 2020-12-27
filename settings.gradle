@@ -1,0 +1,4 @@
+include ':jtds-1.3.1'
+include ':jtds-1.2.5'
+include ':app'
+rootProject.name = "QuizBSTU"

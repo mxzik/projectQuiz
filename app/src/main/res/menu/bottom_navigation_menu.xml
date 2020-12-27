@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_home_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Главная"/>
+    <item
+        android:id="@+id/fragment_top_students"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_leaderboard_24"
+        android:title="Лидеры"/>
+    <item android:id="@+id/fragment_student_results"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_grade_24"
+        android:title="Результаты"/>
+    <item
+        android:id="@+id/exitbutton"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="Настройки"/>
+</menu>

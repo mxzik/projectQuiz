@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Приложение 'Квиз БГТУ'"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20px"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="600px"
+        android:src="@drawable/mrxcyoj1s3q"
+
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="100px">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Логин"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:id="@+id/loginsignin"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/white"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="50px">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:id="@+id/passwordsignin"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Войти"
+        android:textSize="15sp"
+        app:cornerRadius="10dp"
+        android:id="@+id/signin"/>
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registfromlogin"
+        android:textSize="10sp"
+        app:cornerRadius="10dp"
+        android:layout_gravity="center"
+        android:text="Зарегестрироваться"
+        app:strokeColor="@color/purple_200"
+        app:strokeWidth="0dp"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/progressbar"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"/>
+
+</LinearLayout>
